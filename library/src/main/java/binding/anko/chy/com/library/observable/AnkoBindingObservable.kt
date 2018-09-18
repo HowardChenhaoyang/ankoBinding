@@ -5,6 +5,6 @@ interface AnkoBindingObservable<T> {
     fun removePropertyChangeListener(propertyChangeListener: PropertyChangeListener<T>)
 }
 
-interface PropertyChangeListener<T> {
+interface PropertyChangeListener<in T> {
     fun onPropertyChanged(oldValue: T?, newValue: T?)
 }
